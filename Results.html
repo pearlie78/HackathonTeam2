@@ -15,8 +15,20 @@
         margin: 20px auto;
         text-align: center;
     }
+
+    .header { 
+ height:140px;
+ overflow: hidden;
+ background:rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ text-align: center;
+ font-family:monospace;
+ font-size: x-large;
+ 
+}
     .result {
         margin-bottom: 40px;
+        background-color:rgb(144, 159, 225)
     }
     .result h2 {
         font-size: 24px;
@@ -74,7 +86,7 @@
         position: relative;
     }
     .career-progress-bar .bar .progress {
-        background-color: #007bff;
+        background-color: #282f37;
         height: 100%;
         border-radius: 10px;
     }
@@ -111,6 +123,17 @@
 </style>
 </head>
 <body>
+
+    <div class="header">
+        <a href="index.html" class="button" style="color: rgb(255, 255, 255);"> <h1>TechConnect</h1></a>
+        <nav>
+            [ <a href="index.html" class="button" style="color: rgb(144, 159, 225);font-size: larger;">Home</a>
+            <a href="register.html" class="button" style="color:rgb(144, 159, 225);font-size: larger;">Course Hub</a>
+            <a href="schedule.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Quiz</a>
+            <a href="speakers.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Events</a>
+            <a href="contact.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Contact Us</a> ]
+        </nav>
+    </div>   
 
 <div class="container">
     <div class="result">
@@ -150,7 +173,7 @@
     </div>
     <div class="matched-mentors">
         <h3>Your matched mentors</h3>
-        <p>Based on your quiz answers, these mentors have been selected as the best matches for you. Each mentor possesses expertise in areas that align with your skills and career interests.</p>
+        <p>Based on your quiz answers and location, these mentors have been selected as the best matches for you. Each mentor possesses expertise in areas that align with your skills and career interests.</p>
         <div class="mentor">
             <img src="femaleicon.jpg" alt="Mentor 1">
             <p>Pearl Otonekwu</p>
