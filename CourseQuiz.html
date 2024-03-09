@@ -10,14 +10,16 @@
         margin: 0;
         padding: 0;
     }
-    .navbar {
-        background-color: #333;
-        color: #fff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
+    .header { 
+ height:140px;
+ overflow: hidden;
+ background:rgb(0, 0, 0);
+ color: rgb(255, 255, 255);
+ text-align: center;
+ font-family:monospace;
+ font-size: x-large;
+ 
+}
     #logo {
         font-size: 24px;
         margin: 0;
@@ -37,7 +39,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-height: 80vh; /* Set minimum height to ensure vertical centering */
+        min-height: 60vh; /* Set minimum height to ensure vertical centering */
     }
     .main-content {
         text-align: center;
@@ -63,19 +65,20 @@
 </head>
 <body>
 
-    <div class="navbar">
-        <div id="logo">Course Quiz</div>
-        <div id="navigation">
-            <h2>Careers Hub</h2>
-            <h2>Quiz</h2>
-            <h2>Feedback and Recognitions</h2>
-            <h2>Events</h2>
-        </div>
-    </div>
+    <div class="header">
+        <a href="index.html" class="button" style="color: rgb(255, 255, 255);"> <h1>TechConnect</h1></a>
+        <nav>
+            [ <a href="index.html" class="button" style="color: rgb(144, 159, 225);font-size: larger;">Home</a>
+            <a href="register.html" class="button" style="color:rgb(144, 159, 225);font-size: larger;">Course Hub</a>
+            <a href="schedule.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Quiz</a>
+            <a href="speakers.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Events</a>
+            <a href="contact.html" class="button" style="color:rgb(144, 159, 225);font-size:larger;">Contact Us</a> ]
+        </nav>
+    </div> 
     
     <div class="container">
         <div class="main-content">
-            <h2>Discover your career path</h2>
+            <h2>Discover your career path!</h2>
             <div class="description">
                 <p>This quiz will help you explore different career paths and find the one that suits you best.</p>
             </div>
