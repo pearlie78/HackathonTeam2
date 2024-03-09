@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .question {
+        text-align: center;
+    }
+    .question h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .question p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .options {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .options input[type="radio"] {
+        margin-bottom: 10px;
+    }
+    .next-button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .next-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="question">
+        <h2>Question 2</h2>
+        <p>How do you approach problem solving</p>
+        <input type="radio" name="answer" value="paris"> Carefully analysing every option<br>
+        <input type="radio" name="answer" value="london"> Collaborating with options<br>
+        <input type="radio" name="answer" value="berlin"> Gut instinct<br>
+        <input type="radio" name="answer" value="rome"> Finding the most creative solution<br>
+        <input type="radio" name="answer" value="rome"> Finding the easiest solution<br>
+        
+        <button id="next-button">Next</button>
+    </div>
+</div>
+
+<script>
+    document.getElementById("next-button").onclick = function() {
+        // Redirect to the next question page or perform other actions
+        // For demonstration, redirecting back to index.html
+        window.location.href = "index.html";
+    };
+</script>
+
+</body>
+</html>
