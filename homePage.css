@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+#icons {
+    display: flex;
+}
+#icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#courses-box, #footer {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+.course-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.course {
+    width: calc(33.33% - 10px); /* Adjust width to fit 3 images in a row */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.course img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+.course-name {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px; /* Reduce padding */
+    z-index: 1;
+    top: calc(100% + 10px); /* Show tooltip below the profile icon */
+    left: 0; /* Position tooltip box at the left edge of the container */
+    transform: translateX(-50%);
+    width: 200px; /* Adjust width as needed */
+    font-size: 16px; /* Reduce font size */
+}
+
+.tooltip div {
+    margin-bottom: 5px; /* Add space between each item */
+}
+
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+
+.profile-link {
+    display: block;
+    color: #333; /* Change link color */
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    text-decoration: underline;
+}
